@@ -3,11 +3,21 @@
 {% block content %}
 
 
-
-    <h1>Hello World!</h1>
-
-    <p>This is my first webpage</p>
-
-    <p>My name is {{ first_name }}</p>
+<div class="quote-wrapper">
+    <h2>Quote:</h2>
+    <br/>
+    <blockquote id="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nesciunt molestiae voluptate quasi! Dolorum sed praesentium accusantium? Consequuntur 
+        voluptate assumenda asperiores incidunt minima. Impedit veritatis animi placeat 
+        quibusdam, consectetur dignissimos vel.</blockquote>
+        <cite id="quote-author">Author</cite>
+        <br/><br/>
+        <button type="button" id="gen-quote-btn">Get New Quote</button>
+</div>
+<script src="{{ url_for('static', filename='js/myfile.js')}}"></script>
+<br/><br/><br/>
+<h1>Welcome!</h1>
+<h3>Log in and save your favorite Quotes!</h3>
+<br/><br/><br/>
 
 {% endblock %}
